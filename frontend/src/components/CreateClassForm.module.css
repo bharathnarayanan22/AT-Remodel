@@ -1,0 +1,80 @@
+/* body{
+  background-color: #f9f9f9;
+  background-image: url('src/assets/classbg.jpg'); 
+  background-size: cover;
+  background-position: center; 
+}
+ */
+
+.formContainer {
+  max-width: 1000px;
+  max-height: 650px;
+  margin-top: 2% ;
+  margin-left: 6% ;
+  margin-right: 6% ;
+  margin-bottom: 1% ;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
+  color: white;
+}
+
+.formContainer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(5, 5, 5);
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.button {
+  margin-top: 3%;
+  width: 25%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color:#007bff;
+}
+
+.messageContainer {
+  margin-top: 15px;
+}
+
+.successMessage {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.errorMessage {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.innerForm {
+  padding: 50px;
+  margin:50px 10%;
+  border-radius: 10px;
+  background-color: rgb(1, 1, 49);
+}

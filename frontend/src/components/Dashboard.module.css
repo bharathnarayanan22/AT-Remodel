@@ -1,0 +1,168 @@
+.dashboard {
+  display: flex;
+  padding: 20px;
+  background-color: #e5e5e5; /* Light gray background */
+}
+
+.content {
+  flex: 1;
+  margin-left: 250px; /* Adjust to fit the sidebar width */
+}
+
+.mainContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.courseBox {
+  background-color: rgb(1, 1, 49); /* Thick blue mixed with black */
+  color: white; /* Font color */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  flex-basis: calc(50% - 10px); /* Two courses per row with spacing */
+}
+
+.courseBox h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.courseBox p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.courseActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteButton, .viewButton, .attendanceButton {
+  background-color: #990000; /* Blue button */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewButton, .attendanceButton {
+  background-color: #000f99; /* Blue button */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #ffffff; 
+  color: #990000;
+  
+}
+.viewButton:hover, .attendanceButton:hover {
+  background-color: whitesmoke;
+  color:#0056b3 
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.courseDetailsContainer {
+  padding: 20px;
+  background-color: rgb(1, 1, 49);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  color:white;
+}
+
+.courseDetailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.studentTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.studentTable th,
+.studentTable td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.studentTable th {
+  background-color: #f8f9fa; /* Light gray background for table header */
+  text-align: left;
+  color:rgb(1, 1, 49);
+}
+
+.studentActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.attendanceCheckbox {
+  margin: 0;
+}
+
+.backButton {
+  background-color: #a40a0a; 
+  border: white;
+}
+
+.backButton:hover {
+  background-color: #ffffff; /* Darker shade of gray on hover */
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .courseBox {
+    flex-basis: calc(100% - 10px); /* One course per row on smaller screens */
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
